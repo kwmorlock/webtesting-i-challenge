@@ -1,5 +1,5 @@
 // const enhancer = require('./enhancer.js');
-const { repair } = require('./enhancer.js');
+const { repair, succeed } = require('./enhancer.js');
 
 // test away!
 describe("enhancer", () => {
