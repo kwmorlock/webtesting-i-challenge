@@ -11,8 +11,23 @@ describe("enhancer", () => {
            durability: 13,
            enchancement: 7
        }
-       console.log(repair(meowItem))
+    //    console.log(repair(meowItem))
        expect(repair(meowItem).durability).toBe(100)
+      });
+    });
+  });
+
+  describe("enhancer", () => {
+    describe("succeed()", () => {
+
+      it("brings enhancement prettiness to 20", () => {
+       const prettyItem = {
+           name: 'pretty sword',
+           durability: 13,
+           enchancement: 20
+       }
+       console.log(succeed(prettyItem))
+       expect(succeed(prettyItem).enchancement).toEqual(20)
       });
     });
   });
