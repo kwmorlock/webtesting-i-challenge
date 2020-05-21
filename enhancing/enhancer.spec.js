@@ -11,6 +11,8 @@ describe("enhancer", () => {
            durability: 13,
            enchancement: 7
        }
+       console.log(repair(meowItem))
+       expect(repair(meowItem).durability).toBe(100)
       });
     });
   });
